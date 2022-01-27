@@ -1,0 +1,14 @@
+{
+  "id": "RegionMetric/AlertConfirmation",
+  "type": "object",
+  "properties": {
+    "alert_id": { "type": "string" },
+    "region": { "type": "string" },
+    "user_id": { "type": "string" }
+  },
+  "required": [
+    "alert_id",
+    "region",
+    "user_id"
+  ]
+}

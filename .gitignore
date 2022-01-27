@@ -1,0 +1,16 @@
+# Node
+node_modules/*
+
+# IDEs, Editors
+.idea/
+.vscode
+.run
+
+# misc
+.DS_Store
+coverage/
+.env
+*.txt
+
+# Data
+data/*
