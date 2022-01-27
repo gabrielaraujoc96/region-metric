@@ -8,6 +8,12 @@
 **************************************************************/
 
 
+/* **************************************************************************************************
+**
+**  MARK: This class is responsible to create all transaction queries that will be made to the database
+**
+****************************************************************************************************/
+
 module.exports = {
   deleteAll: function (database, callback) {
     database.collection("messages").deleteMany({}, function (err, res) {

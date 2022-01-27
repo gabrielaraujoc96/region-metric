@@ -13,7 +13,7 @@
 **
 ****************************************************************************************************/
 const MetabaseConnector = require("../connectors/MetabaseConnector.js");
-const DefaultQueries = require("../queries/defaultQueries");
+// const DefaultQueries = require("../queries/defaultQueries");
 
 const connection = new MetabaseConnector();
 
@@ -42,24 +42,31 @@ connection.getAuthToken(function (authToken) {
       //This is necessary to make sure that metabase connects to Mongo before we try to create the cards.
       //Since we don't have a callback method from metabase, this is the only way of making sure it works.
       sleep(20000).then(() => {
-        _createCards(authToken);
+        console.log("Setup finish. Access Metabase via localhost:3000");
+        console.log(
+          "To authenticate, use email: region@metric.com, password: 123456"
+        );
+        console.log("Have fun (:");
       });
     });
   }
 });
 
-function _createCards(token) {
-  console.log("Metabase setup completed. Creating cards.");
-  for (let card of DefaultQueries.defaultQueries()) {
-    connection.createCard(card, token);
-  }
-  console.log(
-    "Cards created. You can access then in the 'OUR ANALYTICS' space in the Metabase homepage."
-  );
-  console.log("Setup finish. Access Metabase via localhost:3000");
-  console.log(
-    "To authenticate, use email: region@metric.com, password: 123456"
-  );
-  console.log("Have fun (:");
-  return;
-}
+/************** 
+ * Commented function that is not being used yet. 
+ * */ 
+// function _createCards(token) {
+//   console.log("Metabase setup completed. Creating cards.");
+//   for (let card of DefaultQueries.defaultQueries()) {
+//     connection.createCard(card, token);
+//   }
+//   console.log(
+//     "Cards created. You can access then in the 'OUR ANALYTICS' space in the Metabase homepage."
+//   );
+//   console.log("Setup finish. Access Metabase via localhost:3000");
+//   console.log(
+//     "To authenticate, use email: region@metric.com, password: 123456"
+//   );
+//   console.log("Have fun (:");
+//   return;
+// }

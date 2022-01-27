@@ -47,4 +47,4 @@ The setupMetabase script is only necessary to be used on the first time you run 
 
 Metabase supports only MBQL to do queries with MongoDB. If you need some help doing queries, please, take a look at this documentation: https://docs.mongodb.com/manual/reference/operator/query/
 
-Anyway, Metabase give us a way to do multiple queries via Summarize and Filter. To try this much more simple way, access the Alert DB in "OUR DATA" and then access "Messages". Now you can use all your imagination doing multiple queries and have fun!
+Anyway, Metabase give us a way to do multiple queries via Summarize and Filter. To try this much more simple way, access the Alert DB in "OUR DATA" and then access "Alerts"/"Alerts Confirmations". Now you can use all your imagination doing multiple queries and have fun!
