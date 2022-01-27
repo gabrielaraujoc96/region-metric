@@ -15,8 +15,6 @@
 require("dotenv").config();
 const Koa = require('koa');
 const routes = require('./src/routes');
-const express = require("express");
-const dbQueries = require("./src/queries/transactionQueries");
 const MongoConnector = require("./src/connectors/MongoConnector.js");
 const bodyParser = require('koa-bodyparser');
 

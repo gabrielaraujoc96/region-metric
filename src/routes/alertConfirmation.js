@@ -33,6 +33,8 @@ router.get('/v1/alert_confirmation/:alert_id', async (ctx) => {
     ctx.body = response;
   } catch (err) {
     console.log(err);
+    ctx.status = 500;
+    ctx.body = { response: 'Something went wrong, we are sorry'};
   }
 });
 
