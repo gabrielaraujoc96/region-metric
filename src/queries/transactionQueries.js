@@ -3,7 +3,7 @@
 //  transactionQueries.js
 //  Region Metric
 //
-//  Created by Gabriel Araujo on 20/12/2022.
+//  Created by Gabriel Araujo on 20/01/2022.
 //
 **************************************************************/
 
@@ -13,18 +13,7 @@
 **  MARK: This class is responsible to create all transaction queries that will be made to the database
 **
 ****************************************************************************************************/
-
 module.exports = {
-  deleteAll: function (database, callback) {
-    database.collection("messages").deleteMany({}, function (err, res) {
-      if (err) throw err;
-
-      console.log("Database cleaned. Deleted: " + res.deletedCount) +
-        "documents.";
-      return callback();
-    });
-  },
-
   insertAlert: function (database, alert, callback) {
     database.collection("alerts").insertOne(alert, function (err, res) {
       if (err) throw err;

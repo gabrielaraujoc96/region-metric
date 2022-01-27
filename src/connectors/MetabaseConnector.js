@@ -3,7 +3,7 @@
 //  MetabaseConnector.js
 //  Region Metric
 //
-//  Created by Gabriel Araujo on 20/12/2022.
+//  Created by Gabriel Araujo on 21/01/2022.
 //
 **************************************************************/
 
@@ -22,7 +22,9 @@ var authToken = "";
 
 /* **************************************************************************************************
 **
-**  MARK: This class is responsible to do all the Metabase connection and it's creation
+**  MARK: This class is responsible to do all the Metabase connection and it's creation, and also
+**  contains the setup metabase parts that will create the connection with the Database and all
+**  the setup fields.
 **
 ****************************************************************************************************/
 class MetabaseConnector {
