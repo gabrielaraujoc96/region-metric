@@ -56,7 +56,7 @@ describe('Alert', () => {
 
   const alertConfirmationRequestWithValidParams = {
     alert_id: 'alert-id',
-    region: 'zona-sul',
+    received_zone: 'zona-sul',
     user_id: 'user-id',
   };
 

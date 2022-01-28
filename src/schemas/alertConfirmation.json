@@ -3,12 +3,12 @@
   "type": "object",
   "properties": {
     "alert_id": { "type": "string" },
-    "region": { "type": "string" },
+    "received_zone": { "type": "string" },
     "user_id": { "type": "string" }
   },
   "required": [
     "alert_id",
-    "region",
+    "received_zone",
     "user_id"
   ]
 }
